@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Miniflix — Movie App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Miniflix</h1>
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search movies..." />
+      <select id="genreFilter">
+        <option value="all">All Genres</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section id="movies" class="grid"></section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="close">✕</button>
+      <img id="modalImg" alt="poster" />
+      <div class="modal-body">
+        <h2 id="modalTitle"></h2>
+        <p id="modalGenre"></p>
+        <p id="modalDesc"></p>
+        <p><strong>Rating:</strong> <span id="modalRating"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
